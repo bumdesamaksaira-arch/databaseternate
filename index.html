@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ternate Business Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- HEADER DENGAN GAMBAR -->
+  <header class="relative">
+    <img src="rumah.jpg" alt="Header Image" class="w-full h-44 object-cover">
+    <div class="absolute inset-0 bg-blue-800/50 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-2xl font-bold drop-shadow-lg">Ternate Business Hub</h1>
+      <p class="text-sm mt-1 drop-shadow">Marketplace Usaha Lokal Ternate</p>
+    </div>
+  </header>
+
+  <!-- PENCARIAN -->
+  <div class="bg-white p-3 shadow-md sticky top-0 z-40">
+    <input type="text" placeholder="Cari usaha di Ternate..."
+           class="w-full p-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300">
+  </div>
+
+  <!-- KATEGORI -->
+  <section class="mt-4 px-4">
+    <h2 class="text-lg font-semibold mb-3 text-gray-700">Kategori Usaha</h2>
+    <div class="grid grid-cols-3 gap-3 text-center">
+      <div class="bg-white rounded-xl p-3 shadow hover:shadow-md cursor-pointer">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" alt="Kos" class="w-12 mx-auto mb-2">
+        <p class="text-sm font-medium">Kos-Kosan</p>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow hover:shadow-md cursor-pointer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png" alt="Laundry" class="w-12 mx-auto mb-2">
+        <p class="text-sm font-medium">Laundry</p>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow hover:shadow-md cursor-pointer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="Cafe" class="w-12 mx-auto mb-2">
+        <p class="text-sm font-medium">Cafe & Resto</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAFTAR USAHA -->
+  <section class="mt-6 px-4 mb-20">
+    <h2 class="text-lg font-semibold mb-3 text-gray-700">Usaha Terbaru</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?boarding-house" alt="Kos" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="font-semibold text-gray-800">Kos Melati Indah</h3>
+          <p class="text-sm text-gray-600 mb-2">Jl. Stadion, Ternate Tengah</p>
+          <p class="text-blue-600 font-medium mb-3">Rp 1.000.000 / bulan</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Kos%20Melati%20Indah"
+             target="_blank"
+             class="flex items-center justify-center bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" class="w-5 h-5 mr-2">
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?laundry" alt="Laundry" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="font-semibold text-gray-800">Fresh Laundry</h3>
+          <p class="text-sm text-gray-600 mb-2">Jl. Merdeka, Ternate Selatan</p>
+          <p class="text-blue-600 font-medium mb-3">Mulai Rp 10.000 / kg</p>
+          <a href="https://wa.me/6289876543210?text=Halo%20saya%20ingin%20laundry%20di%20Fresh%20Laundry"
+             target="_blank"
+             class="flex items-center justify-center bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" class="w-5 h-5 mr-2">
+            Chat via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?cafe" alt="Cafe" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="font-semibold text-gray-800">Cafe D'Santai</h3>
+          <p class="text-sm text-gray-600 mb-2">Jl. Falajawa, Ternate Tengah</p>
+          <p class="text-blue-600 font-medium mb-3">Menu mulai Rp 25.000</p>
+          <a href="https://wa.me/6281122334455?text=Halo%20saya%20ingin%20reservasi%20di%20Cafe%20D'Santai"
+             target="_blank"
+             class="flex items-center justify-center bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" class="w-5 h-5 mr-2">
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-700 text-white text-center py-4 text-sm fixed bottom-0 w-full">
+    <p>&copy; 2025 Ternate Business Hub | Temukan usaha lokal terbaik</p>
+  </footer>
+
+</body>
+</html>
